@@ -41,8 +41,11 @@ public class line {
 		dis2 = Math.sqrt((x4 - x3) * (x4 - x3) + (y4 - y3) * (y4 - y3));
 		System.out.println("Lenght of line 2: " + dis2);
 
-		if (dis1 == dis2) {
-			System.out.println("Two Lines are Equals");
+		if (dis1 > dis2) {
+			System.out.println(" First Line Greater than Second Line");
+		} else if (dis1 < dis2) {
+			System.out.println("Second Line Greater than First Line");
+
 		} else
 			System.out.println("Two Lines are Not Equals");
 
